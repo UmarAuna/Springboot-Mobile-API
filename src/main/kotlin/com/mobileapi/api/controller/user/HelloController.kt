@@ -13,13 +13,13 @@ import org.springframework.web.bind.annotation.RestController
 * */
 
 @RestController
-@RequestMapping("/api/v1")
+//@RequestMapping("/api/v1")
 class HelloController {
 
-    @RequestMapping(value = ["/helloworld"], method = [RequestMethod.GET])
+    @RequestMapping(value = ["/public/helloworld"], method = [RequestMethod.GET])
     fun getHelloWorld(): ResponseEntity<String> = ResponseEntity.ok("Hello World")
 
-    @RequestMapping(value = ["/helloworld/{name}"], method = [RequestMethod.GET])
+    @RequestMapping(value = ["/private/helloworld/{name}"], method = [RequestMethod.GET])
     fun getHelloWorldMessageWithName(
             @PathVariable("name")
             name:String
