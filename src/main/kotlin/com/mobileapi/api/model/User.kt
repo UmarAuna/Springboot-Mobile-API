@@ -29,7 +29,7 @@ class User : UserDetails {
     @JoinTable(name = "role_user",
             joinColumns = [(JoinColumn(name = "user_id", referencedColumnName = "user_id"))],
             inverseJoinColumns = [(JoinColumn(name = "role_id", referencedColumnName = "role_id"))])
-    private var roles: Collection<Role> = emptyList()
+    private var roles: Collection<Role?> = emptyList()
 
     @Transient
     private val rolePrefix = "ROLE_"
@@ -38,12 +38,11 @@ class User : UserDetails {
         val list = ArrayList<GrantedAuthority>()
 
         for (role in roles) {
-            list.add(SimpleGrantedAuthority(rolePrefix + role.name))
+            list.add(SimpleGrantedAuthority(rolePrefix + role?.name))
         }
 
         return list
     }
-
 
     override fun isEnabled(): Boolean {
         return enabled
@@ -69,7 +68,7 @@ class User : UserDetails {
         return true
     }
 
-    fun setRoles(roles: Collection<Role>) {
+    fun setRoles(roles: List<Role?>) {
         this.roles = roles
     }
 

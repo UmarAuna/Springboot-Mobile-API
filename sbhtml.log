@@ -1,360 +1,187 @@
-2020-10-04 21:15:13.592  INFO 1527 --- [restartedMain] com.mobileapi.api.ApiApplicationKt       : Starting ApiApplicationKt on mac-umarauna.local with PID 1527 (/Users/umarsaiduauna/Documents/IntelliJ/Java/SpringBoot/mobile-api/target/classes started by umarsaiduauna in /Users/umarsaiduauna/Documents/IntelliJ/Java/SpringBoot/mobile-api)
-2020-10-04 21:15:13.599  INFO 1527 --- [restartedMain] com.mobileapi.api.ApiApplicationKt       : No active profile set, falling back to default profiles: default
-2020-10-04 21:15:13.754  INFO 1527 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-core-2.3.0.1.jar referenced one or more files that do not exist: file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-api.jar
-2020-10-04 21:15:13.756  INFO 1527 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-impl-2.3.1.jar referenced one or more files that do not exist: file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-runtime-2.3.1.jar,file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/txw2-2.3.1.jar,file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/istack-commons-runtime-3.0.7.jar,file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/stax-ex-1.8.jar,file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/FastInfoset-1.2.15.jar,file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/javax.activation-api-1.2.0.jar
-2020-10-04 21:15:13.756  INFO 1527 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-10-04 21:15:17.067  INFO 1527 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-10-04 21:15:17.074  INFO 1527 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2020-10-04 21:15:17.209  INFO 1527 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mobileapi.api.dao.RoleDao. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2020-10-04 21:15:17.221  INFO 1527 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mobileapi.api.dao.UserDao. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2020-10-04 21:15:17.226  INFO 1527 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mobileapi.api.dao.UserInfoDao. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2020-10-04 21:15:17.233  INFO 1527 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 141ms. Found 0 JDBC repository interfaces.
-2020-10-04 21:15:17.263  INFO 1527 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-10-04 21:15:17.264  INFO 1527 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-10-04 21:15:17.359  INFO 1527 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76ms. Found 3 JPA repository interfaces.
-2020-10-04 21:15:18.222  INFO 1527 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-10-04 21:15:18.236  INFO 1527 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-10-04 21:15:18.237  INFO 1527 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-10-04 21:15:18.330  INFO 1527 --- [restartedMain] o.a.c.c.C.[.[localhost].[/mobileAPI]     : Initializing Spring embedded WebApplicationContext
-2020-10-04 21:15:18.331  INFO 1527 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4574 ms
-2020-10-04 21:15:18.624 DEBUG 1527 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: filterRegistrationBean urls=[/*] order=-2147483647, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
-2020-10-04 21:15:18.625 DEBUG 1527 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
-2020-10-04 21:15:18.727  INFO 1527 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-10-04 21:15:20.037 ERROR 1527 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
-
-java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:121) ~[HikariCP-3.4.5.jar:na]
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358) ~[HikariCP-3.4.5.jar:na]
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-3.4.5.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477) ~[HikariCP-3.4.5.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560) ~[HikariCP-3.4.5.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-3.4.5.jar:na]
-	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:81) ~[HikariCP-3.4.5.jar:na]
-	at com.mobileapi.api.config.DatabaseConfig.dataSource(DatabaseConfig.kt:20) ~[classes/:na]
-	at com.mobileapi.api.config.DatabaseConfig$$EnhancerBySpringCGLIB$$a6d3ada1.CGLIB$dataSource$0(<generated>) ~[classes/:na]
-	at com.mobileapi.api.config.DatabaseConfig$$EnhancerBySpringCGLIB$$a6d3ada1$$FastClassBySpringCGLIB$$9fc520de.invoke(<generated>) ~[classes/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at com.mobileapi.api.config.DatabaseConfig$$EnhancerBySpringCGLIB$$a6d3ada1.dataSource(<generated>) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:483) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:408) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1109) ~[spring-context-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) ~[spring-context-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at com.mobileapi.api.ApiApplicationKt.main(ApiApplication.kt:17) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-
-2020-10-04 21:15:20.043  WARN 1527 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/mobileapi/api/config/DatabaseConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Public Key Retrieval is not allowed
-2020-10-04 21:15:20.047  INFO 1527 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2020-10-04 21:15:20.073  INFO 1527 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+2020-10-05 20:15:24.128  INFO 2202 --- [restartedMain] com.mobileapi.api.ApiApplicationKt       : Starting ApiApplicationKt on mac-umarauna.local with PID 2202 (/Users/umarsaiduauna/Documents/IntelliJ/Java/SpringBoot/mobile-api/target/classes started by umarsaiduauna in /Users/umarsaiduauna/Documents/IntelliJ/Java/SpringBoot/mobile-api)
+2020-10-05 20:15:24.134  INFO 2202 --- [restartedMain] com.mobileapi.api.ApiApplicationKt       : No active profile set, falling back to default profiles: default
+2020-10-05 20:15:24.238  INFO 2202 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-core-2.3.0.1.jar referenced one or more files that do not exist: file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-api.jar
+2020-10-05 20:15:24.239  INFO 2202 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-impl-2.3.1.jar referenced one or more files that do not exist: file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-runtime-2.3.1.jar,file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/txw2-2.3.1.jar,file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/istack-commons-runtime-3.0.7.jar,file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/stax-ex-1.8.jar,file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/FastInfoset-1.2.15.jar,file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/javax.activation-api-1.2.0.jar
+2020-10-05 20:15:24.242  INFO 2202 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-10-05 20:15:25.273  WARN 2202 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'userDetailsService' defined in class path resource [com/mobileapi/api/config/WebSecurityConfig.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=webSecurityConfig; factoryMethodName=userDetailsService; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/mobileapi/api/config/WebSecurityConfig.class]] for bean 'userDetailsService': There is already [Generic bean: class [com.mobileapi.api.service.UserService]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [/Users/umarsaiduauna/Documents/IntelliJ/Java/SpringBoot/mobile-api/target/classes/com/mobileapi/api/service/UserService.class]] bound.
+2020-10-05 20:15:25.288  INFO 2202 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
 
 Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2020-10-04 21:15:20.092 ERROR 1527 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+2020-10-05 20:15:25.293 ERROR 2202 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
 
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/mobileapi/api/config/DatabaseConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Public Key Retrieval is not allowed
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:408) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1109) ~[spring-context-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869) ~[spring-context-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) ~[spring-boot-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-	at com.mobileapi.api.ApiApplicationKt.main(ApiApplication.kt:17) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.3.4.RELEASE.jar:2.3.4.RELEASE]
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/mobileapi/api/config/DatabaseConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Public Key Retrieval is not allowed
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:483) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	... 34 common frames omitted
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Public Key Retrieval is not allowed
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	... 48 common frames omitted
-Caused by: com.zaxxer.hikari.pool.HikariPool$PoolInitializationException: Failed to initialize pool: Public Key Retrieval is not allowed
-	at com.zaxxer.hikari.pool.HikariPool.throwPoolInitializationException(HikariPool.java:595) ~[HikariCP-3.4.5.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:581) ~[HikariCP-3.4.5.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115) ~[HikariCP-3.4.5.jar:na]
-	at com.zaxxer.hikari.HikariDataSource.<init>(HikariDataSource.java:81) ~[HikariCP-3.4.5.jar:na]
-	at com.mobileapi.api.config.DatabaseConfig.dataSource(DatabaseConfig.kt:20) ~[classes/:na]
-	at com.mobileapi.api.config.DatabaseConfig$$EnhancerBySpringCGLIB$$a6d3ada1.CGLIB$dataSource$0(<generated>) ~[classes/:na]
-	at com.mobileapi.api.config.DatabaseConfig$$EnhancerBySpringCGLIB$$a6d3ada1$$FastClassBySpringCGLIB$$9fc520de.invoke(<generated>) ~[classes/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	at com.mobileapi.api.config.DatabaseConfig$$EnhancerBySpringCGLIB$$a6d3ada1.dataSource(<generated>) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566) ~[na:na]
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.2.9.RELEASE.jar:5.2.9.RELEASE]
-	... 49 common frames omitted
-Caused by: java.sql.SQLNonTransientConnectionException: Public Key Retrieval is not allowed
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:121) ~[HikariCP-3.4.5.jar:na]
-	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358) ~[HikariCP-3.4.5.jar:na]
-	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206) ~[HikariCP-3.4.5.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477) ~[HikariCP-3.4.5.jar:na]
-	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560) ~[HikariCP-3.4.5.jar:na]
-	... 62 common frames omitted
+***************************
+APPLICATION FAILED TO START
+***************************
 
-2020-10-04 21:19:09.413  INFO 1653 --- [restartedMain] com.mobileapi.api.ApiApplicationKt       : Starting ApiApplicationKt on mac-umarauna.local with PID 1653 (/Users/umarsaiduauna/Documents/IntelliJ/Java/SpringBoot/mobile-api/target/classes started by umarsaiduauna in /Users/umarsaiduauna/Documents/IntelliJ/Java/SpringBoot/mobile-api)
-2020-10-04 21:19:09.417  INFO 1653 --- [restartedMain] com.mobileapi.api.ApiApplicationKt       : No active profile set, falling back to default profiles: default
-2020-10-04 21:19:09.493  INFO 1653 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-core-2.3.0.1.jar referenced one or more files that do not exist: file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-api.jar
-2020-10-04 21:19:09.494  INFO 1653 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-impl-2.3.1.jar referenced one or more files that do not exist: file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-runtime-2.3.1.jar,file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/txw2-2.3.1.jar,file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/istack-commons-runtime-3.0.7.jar,file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/stax-ex-1.8.jar,file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/FastInfoset-1.2.15.jar,file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/javax.activation-api-1.2.0.jar
-2020-10-04 21:19:09.494  INFO 1653 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-10-04 21:19:11.330  INFO 1653 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-10-04 21:19:11.331  INFO 1653 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2020-10-04 21:19:11.385  INFO 1653 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mobileapi.api.dao.RoleDao. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2020-10-04 21:19:11.387  INFO 1653 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mobileapi.api.dao.UserDao. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2020-10-04 21:19:11.389  INFO 1653 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mobileapi.api.dao.UserInfoDao. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2020-10-04 21:19:11.389  INFO 1653 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50ms. Found 0 JDBC repository interfaces.
-2020-10-04 21:19:11.403  INFO 1653 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-10-04 21:19:11.403  INFO 1653 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-10-04 21:19:11.444  INFO 1653 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35ms. Found 3 JPA repository interfaces.
-2020-10-04 21:19:12.181  INFO 1653 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-10-04 21:19:12.193  INFO 1653 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-10-04 21:19:12.194  INFO 1653 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-10-04 21:19:12.293  INFO 1653 --- [restartedMain] o.a.c.c.C.[.[localhost].[/mobileAPI]     : Initializing Spring embedded WebApplicationContext
-2020-10-04 21:19:12.294  INFO 1653 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2800 ms
-2020-10-04 21:19:12.489 DEBUG 1653 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: filterRegistrationBean urls=[/*] order=-2147483647, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
-2020-10-04 21:19:12.489 DEBUG 1653 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
-2020-10-04 21:19:12.545  INFO 1653 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-10-04 21:19:12.747  INFO 1653 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-10-04 21:19:12.871  INFO 1653 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-04 21:19:12.923  INFO 1653 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-10-04 21:19:12.970  WARN 1653 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-10-04 21:19:12.998  INFO 1653 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
-2020-10-04 21:19:13.181  INFO 1653 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-10-04 21:19:13.227 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@1d85478d
-2020-10-04 21:19:13.227 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@1d85478d
-2020-10-04 21:19:13.227 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@1d85478d
-2020-10-04 21:19:13.228 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@228d8619
-2020-10-04 21:19:13.229 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.TrueFalseType@2c001deb
-2020-10-04 21:19:13.230 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.YesNoType@541dce68
-2020-10-04 21:19:13.232 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@48bda9a7
-2020-10-04 21:19:13.232 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@48bda9a7
-2020-10-04 21:19:13.232 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@48bda9a7
-2020-10-04 21:19:13.233 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.CharacterType@71d22762
-2020-10-04 21:19:13.234 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.CharacterType@71d22762
-2020-10-04 21:19:13.234 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@71d22762
-2020-10-04 21:19:13.235 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@550b57d7
-2020-10-04 21:19:13.235 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@550b57d7
-2020-10-04 21:19:13.235 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@550b57d7
-2020-10-04 21:19:13.236 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.IntegerType@28fcd39a
-2020-10-04 21:19:13.236 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.IntegerType@28fcd39a
-2020-10-04 21:19:13.236 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@28fcd39a
-2020-10-04 21:19:13.238 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@163f5009
-2020-10-04 21:19:13.238 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@163f5009
-2020-10-04 21:19:13.239 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.LongType@163f5009
-2020-10-04 21:19:13.240 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@613a521
-2020-10-04 21:19:13.240 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@613a521
-2020-10-04 21:19:13.240 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@613a521
-2020-10-04 21:19:13.241 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@7e269d
-2020-10-04 21:19:13.242 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@7e269d
-2020-10-04 21:19:13.242 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@7e269d
-2020-10-04 21:19:13.243 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@db50660
-2020-10-04 21:19:13.243 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@db50660
-2020-10-04 21:19:13.244 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@35909da
-2020-10-04 21:19:13.244 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@35909da
-2020-10-04 21:19:13.245 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.StringType@678d6cf1
-2020-10-04 21:19:13.245 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.StringType@678d6cf1
-2020-10-04 21:19:13.246 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@deb617a
-2020-10-04 21:19:13.246 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@493e158c
-2020-10-04 21:19:13.247 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.UrlType@70f16be2
-2020-10-04 21:19:13.248 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.UrlType@70f16be2
-2020-10-04 21:19:13.248 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.DurationType@60edaba1
-2020-10-04 21:19:13.249 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@60edaba1
-2020-10-04 21:19:13.249 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration Instant -> org.hibernate.type.InstantType@1091e49e
-2020-10-04 21:19:13.250 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@1091e49e
-2020-10-04 21:19:13.251 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@4c6158a4
-2020-10-04 21:19:13.251 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@4c6158a4
-2020-10-04 21:19:13.252 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@22b407d6
-2020-10-04 21:19:13.253 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@22b407d6
-2020-10-04 21:19:13.254 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@7f346635
-2020-10-04 21:19:13.254 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@7f346635
-2020-10-04 21:19:13.255 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@4fdaa870
-2020-10-04 21:19:13.256 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@4fdaa870
-2020-10-04 21:19:13.257 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@16bb2563
-2020-10-04 21:19:13.257 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@16bb2563
-2020-10-04 21:19:13.258 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@6821625a
-2020-10-04 21:19:13.259 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@6821625a
-2020-10-04 21:19:13.261 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.DateType@aa447db
-2020-10-04 21:19:13.261 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.DateType@aa447db
-2020-10-04 21:19:13.262 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.TimeType@11b925f7
-2020-10-04 21:19:13.262 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@11b925f7
-2020-10-04 21:19:13.263 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.TimestampType@69ebb96c
-2020-10-04 21:19:13.263 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@69ebb96c
-2020-10-04 21:19:13.263 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@69ebb96c
-2020-10-04 21:19:13.265 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@3c09cbcf
-2020-10-04 21:19:13.266 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.CalendarType@3bee6aab
-2020-10-04 21:19:13.266 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@3bee6aab
-2020-10-04 21:19:13.266 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@3bee6aab
-2020-10-04 21:19:13.267 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@2e6ac8b8
-2020-10-04 21:19:13.268 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@2e0d4579
-2020-10-04 21:19:13.269 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.LocaleType@60edcedf
-2020-10-04 21:19:13.269 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@60edcedf
-2020-10-04 21:19:13.270 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.CurrencyType@190633d3
-2020-10-04 21:19:13.271 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@190633d3
-2020-10-04 21:19:13.272 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.TimeZoneType@6cecc5cb
-2020-10-04 21:19:13.272 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@6cecc5cb
-2020-10-04 21:19:13.272 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.ClassType@5f3adca2
-2020-10-04 21:19:13.273 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@5f3adca2
-2020-10-04 21:19:13.274 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@60a9ec4e
-2020-10-04 21:19:13.274 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@60a9ec4e
-2020-10-04 21:19:13.274 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@23f3b6ef
-2020-10-04 21:19:13.276 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BinaryType@a54f101
-2020-10-04 21:19:13.276 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BinaryType@a54f101
-2020-10-04 21:19:13.276 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BinaryType@a54f101
-2020-10-04 21:19:13.277 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@2edcead0
-2020-10-04 21:19:13.277 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@2edcead0
-2020-10-04 21:19:13.277 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@2edcead0
-2020-10-04 21:19:13.280 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.RowVersionType@59be2252
-2020-10-04 21:19:13.280 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.ImageType@58cc7315
-2020-10-04 21:19:13.281 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.CharArrayType@2f261a54
-2020-10-04 21:19:13.281 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.CharArrayType@2f261a54
-2020-10-04 21:19:13.281 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.CharArrayType@2f261a54
-2020-10-04 21:19:13.282 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@2ae6c41a
-2020-10-04 21:19:13.282 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@2ae6c41a
-2020-10-04 21:19:13.282 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@2ae6c41a
-2020-10-04 21:19:13.282 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.TextType@3a2d4212
-2020-10-04 21:19:13.283 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.NTextType@1874778e
-2020-10-04 21:19:13.284 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BlobType@7cc51700
-2020-10-04 21:19:13.284 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@7cc51700
-2020-10-04 21:19:13.285 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@398875ed
-2020-10-04 21:19:13.286 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.ClobType@44dfdc56
-2020-10-04 21:19:13.287 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@44dfdc56
-2020-10-04 21:19:13.288 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.NClobType@4a18fa69
-2020-10-04 21:19:13.288 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@4a18fa69
-2020-10-04 21:19:13.288 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@3549bfce
-2020-10-04 21:19:13.289 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@4f829ecf
-2020-10-04 21:19:13.290 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.SerializableType@703f0c
-2020-10-04 21:19:13.293 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.ObjectType@4a3d936
-2020-10-04 21:19:13.294 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@4a3d936
-2020-10-04 21:19:13.294 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@483c6699
-2020-10-04 21:19:13.294 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@4a1864d3
-2020-10-04 21:19:13.294 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@5f8c7dc7
-2020-10-04 21:19:13.295 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@6e8dd1be
-2020-10-04 21:19:13.295 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@45ae7a58
-2020-10-04 21:19:13.295 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@4c99b0c2
-2020-10-04 21:19:13.295 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@70479ed3
-2020-10-04 21:19:13.295 DEBUG 1653 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@7047a144
-2020-10-04 21:19:13.359  INFO 1653 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2020-10-04 21:19:13.509 DEBUG 1653 --- [task-1] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@2795ce5f] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@32e576fd]
-2020-10-04 21:19:13.625  INFO 1653 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5bab3cbf, org.springframework.security.web.context.SecurityContextPersistenceFilter@17d35eda, org.springframework.security.web.header.HeaderWriterFilter@386e9b81, org.springframework.security.web.authentication.logout.LogoutFilter@753bd67a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7cbda2af, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@41296b4d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7905c0b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a9245bf, org.springframework.security.web.session.SessionManagementFilter@32f370e, org.springframework.security.web.access.ExceptionTranslationFilter@5ea9d623, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5ea2d05a]
-2020-10-04 21:19:13.638  INFO 1653 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfiguration$NotOAuthRequestMatcher@894ad17, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@28ab1775, org.springframework.security.web.context.SecurityContextPersistenceFilter@2180efed, org.springframework.security.web.header.HeaderWriterFilter@448bf7c7, org.springframework.security.web.authentication.logout.LogoutFilter@c5ea983, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@12b46d47, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d822762, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@162cdcda, org.springframework.security.web.session.SessionManagementFilter@4e3e553b, org.springframework.security.web.access.ExceptionTranslationFilter@6c781acd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@72ad9d1]
-2020-10-04 21:19:13.646  INFO 1653 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6d1c5b98, org.springframework.security.web.context.SecurityContextPersistenceFilter@2f6cfc2a, org.springframework.security.web.header.HeaderWriterFilter@122e8cd8, org.springframework.security.web.csrf.CsrfFilter@1ce15e5d, org.springframework.security.web.authentication.logout.LogoutFilter@62aeec72, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@79c7fba5, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@79d4d7e3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@796680d8, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@29a077ee, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c17ef70, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a39f666, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3f3a5682, org.springframework.security.web.session.SessionManagementFilter@39694eec, org.springframework.security.web.access.ExceptionTranslationFilter@208c7689, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@53e8e0db]
-2020-10-04 21:19:13.787 DEBUG 1653 --- [task-1] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@2795ce5f] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@10365a6e]
-2020-10-04 21:19:13.825 DEBUG 1653 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2020-10-04 21:19:13.879 DEBUG 1653 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
-2020-10-04 21:19:13.919 DEBUG 1653 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2020-10-04 21:19:13.945 DEBUG 1653 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2020-10-04 21:19:13.985  WARN 1653 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2020-10-04 21:19:14.184  INFO 1653 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-10-04 21:19:14.191 TRACE 1653 --- [task-1] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@10365a6e] for TypeConfiguration
-2020-10-04 21:19:14.194  INFO 1653 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-10-04 21:19:14.261  INFO 1653 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-10-04 21:19:14.317 DEBUG 1653 --- [restartedMain] o.h.stat.internal.StatisticsInitiator    : Statistics initialized [enabled=true]
-2020-10-04 21:19:14.509  INFO 1653 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-2020-10-04 21:19:14.592  INFO 1653 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/mobileAPI'
-2020-10-04 21:19:14.593  INFO 1653 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
-2020-10-04 21:19:14.707  INFO 1653 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
+Description:
+
+The bean 'userDetailsService', defined in class path resource [com/mobileapi/api/config/WebSecurityConfig.class], could not be registered. A bean with that name has already been defined in file [/Users/umarsaiduauna/Documents/IntelliJ/Java/SpringBoot/mobile-api/target/classes/com/mobileapi/api/service/UserService.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2020-10-05 20:16:03.332  INFO 2217 --- [restartedMain] com.mobileapi.api.ApiApplicationKt       : Starting ApiApplicationKt on mac-umarauna.local with PID 2217 (/Users/umarsaiduauna/Documents/IntelliJ/Java/SpringBoot/mobile-api/target/classes started by umarsaiduauna in /Users/umarsaiduauna/Documents/IntelliJ/Java/SpringBoot/mobile-api)
+2020-10-05 20:16:03.336  INFO 2217 --- [restartedMain] com.mobileapi.api.ApiApplicationKt       : No active profile set, falling back to default profiles: default
+2020-10-05 20:16:03.417  INFO 2217 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-core-2.3.0.1.jar referenced one or more files that do not exist: file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-api.jar
+2020-10-05 20:16:03.417  INFO 2217 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-impl-2.3.1.jar referenced one or more files that do not exist: file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-runtime-2.3.1.jar,file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/txw2-2.3.1.jar,file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/istack-commons-runtime-3.0.7.jar,file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/stax-ex-1.8.jar,file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/FastInfoset-1.2.15.jar,file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/javax.activation-api-1.2.0.jar
+2020-10-05 20:16:03.418  INFO 2217 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-10-05 20:16:05.143  INFO 2217 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-05 20:16:05.144  INFO 2217 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2020-10-05 20:16:05.198  INFO 2217 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mobileapi.api.dao.RoleDao. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2020-10-05 20:16:05.199  INFO 2217 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mobileapi.api.dao.UserDao. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2020-10-05 20:16:05.201  INFO 2217 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mobileapi.api.dao.UserInfoDao. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2020-10-05 20:16:05.202  INFO 2217 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50ms. Found 0 JDBC repository interfaces.
+2020-10-05 20:16:05.213  INFO 2217 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-05 20:16:05.214  INFO 2217 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-10-05 20:16:05.251  INFO 2217 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31ms. Found 3 JPA repository interfaces.
+2020-10-05 20:16:05.950  INFO 2217 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-10-05 20:16:05.962  INFO 2217 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-05 20:16:05.962  INFO 2217 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-05 20:16:06.063  INFO 2217 --- [restartedMain] o.a.c.c.C.[.[localhost].[/mobileAPI]     : Initializing Spring embedded WebApplicationContext
+2020-10-05 20:16:06.064  INFO 2217 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2646 ms
+2020-10-05 20:16:06.226 DEBUG 2217 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: filterRegistrationBean urls=[/*] order=-2147483647, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2020-10-05 20:16:06.226 DEBUG 2217 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
+2020-10-05 20:16:06.279  INFO 2217 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-10-05 20:16:06.478  INFO 2217 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-10-05 20:16:06.616  INFO 2217 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-05 20:16:06.669  INFO 2217 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-10-05 20:16:06.716  WARN 2217 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-05 20:16:06.738  INFO 2217 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
+2020-10-05 20:16:06.915  INFO 2217 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-10-05 20:16:06.952 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@5014c16a
+2020-10-05 20:16:06.952 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@5014c16a
+2020-10-05 20:16:06.952 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@5014c16a
+2020-10-05 20:16:06.953 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@7ac1e47e
+2020-10-05 20:16:06.954 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.TrueFalseType@163ea144
+2020-10-05 20:16:06.955 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.YesNoType@6177a237
+2020-10-05 20:16:06.957 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@57536797
+2020-10-05 20:16:06.957 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@57536797
+2020-10-05 20:16:06.957 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@57536797
+2020-10-05 20:16:06.958 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.CharacterType@3762fac
+2020-10-05 20:16:06.958 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.CharacterType@3762fac
+2020-10-05 20:16:06.958 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@3762fac
+2020-10-05 20:16:06.960 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@1c4c90d7
+2020-10-05 20:16:06.960 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@1c4c90d7
+2020-10-05 20:16:06.960 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@1c4c90d7
+2020-10-05 20:16:06.961 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.IntegerType@5f0f8f6a
+2020-10-05 20:16:06.961 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.IntegerType@5f0f8f6a
+2020-10-05 20:16:06.961 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@5f0f8f6a
+2020-10-05 20:16:06.962 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@7c075db3
+2020-10-05 20:16:06.963 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@7c075db3
+2020-10-05 20:16:06.963 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.LongType@7c075db3
+2020-10-05 20:16:06.964 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@f35a8cc
+2020-10-05 20:16:06.964 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@f35a8cc
+2020-10-05 20:16:06.964 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@f35a8cc
+2020-10-05 20:16:06.965 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@1db29ce2
+2020-10-05 20:16:06.965 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@1db29ce2
+2020-10-05 20:16:06.965 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@1db29ce2
+2020-10-05 20:16:06.966 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@2dcabaa5
+2020-10-05 20:16:06.967 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@2dcabaa5
+2020-10-05 20:16:06.967 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@702ee9d8
+2020-10-05 20:16:06.968 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@702ee9d8
+2020-10-05 20:16:06.968 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.StringType@38aa8ff6
+2020-10-05 20:16:06.969 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.StringType@38aa8ff6
+2020-10-05 20:16:06.969 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@3637b0f9
+2020-10-05 20:16:06.970 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@ab5d7a0
+2020-10-05 20:16:06.971 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.UrlType@421ed9c4
+2020-10-05 20:16:06.971 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.UrlType@421ed9c4
+2020-10-05 20:16:06.972 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.DurationType@71aa9444
+2020-10-05 20:16:06.972 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@71aa9444
+2020-10-05 20:16:06.973 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration Instant -> org.hibernate.type.InstantType@1e3929d4
+2020-10-05 20:16:06.973 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@1e3929d4
+2020-10-05 20:16:06.974 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@6b442312
+2020-10-05 20:16:06.974 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@6b442312
+2020-10-05 20:16:06.975 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@32fcfccc
+2020-10-05 20:16:06.976 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@32fcfccc
+2020-10-05 20:16:06.977 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@64a34137
+2020-10-05 20:16:06.977 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@64a34137
+2020-10-05 20:16:06.979 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@5096ebef
+2020-10-05 20:16:06.979 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@5096ebef
+2020-10-05 20:16:06.980 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@586970a8
+2020-10-05 20:16:06.980 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@586970a8
+2020-10-05 20:16:06.982 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@4dbd3946
+2020-10-05 20:16:06.982 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@4dbd3946
+2020-10-05 20:16:06.984 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.DateType@9e36ade
+2020-10-05 20:16:06.984 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.DateType@9e36ade
+2020-10-05 20:16:06.985 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.TimeType@1df5dc6a
+2020-10-05 20:16:06.985 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@1df5dc6a
+2020-10-05 20:16:06.986 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.TimestampType@3970a081
+2020-10-05 20:16:06.987 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@3970a081
+2020-10-05 20:16:06.987 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@3970a081
+2020-10-05 20:16:06.988 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@27dd1f1
+2020-10-05 20:16:06.989 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.CalendarType@64769ffd
+2020-10-05 20:16:06.990 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@64769ffd
+2020-10-05 20:16:06.990 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@64769ffd
+2020-10-05 20:16:06.990 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@298c80cb
+2020-10-05 20:16:06.991 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@51f81078
+2020-10-05 20:16:06.992 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.LocaleType@2c8aec9f
+2020-10-05 20:16:06.992 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@2c8aec9f
+2020-10-05 20:16:06.993 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.CurrencyType@727f0043
+2020-10-05 20:16:06.993 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@727f0043
+2020-10-05 20:16:06.994 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.TimeZoneType@2953d659
+2020-10-05 20:16:06.994 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@2953d659
+2020-10-05 20:16:06.995 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.ClassType@7708a6e9
+2020-10-05 20:16:06.995 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@7708a6e9
+2020-10-05 20:16:06.996 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@3a104022
+2020-10-05 20:16:06.996 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@3a104022
+2020-10-05 20:16:06.997 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@4138bb18
+2020-10-05 20:16:06.998 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BinaryType@4dca9c50
+2020-10-05 20:16:06.998 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BinaryType@4dca9c50
+2020-10-05 20:16:06.999 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BinaryType@4dca9c50
+2020-10-05 20:16:06.999 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@422c0d47
+2020-10-05 20:16:06.999 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@422c0d47
+2020-10-05 20:16:07.000 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@422c0d47
+2020-10-05 20:16:07.001 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.RowVersionType@15141cd8
+2020-10-05 20:16:07.001 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.ImageType@3b9beaf4
+2020-10-05 20:16:07.002 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.CharArrayType@34a7818c
+2020-10-05 20:16:07.002 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.CharArrayType@34a7818c
+2020-10-05 20:16:07.002 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.CharArrayType@34a7818c
+2020-10-05 20:16:07.003 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@32ec6907
+2020-10-05 20:16:07.003 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@32ec6907
+2020-10-05 20:16:07.003 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@32ec6907
+2020-10-05 20:16:07.004 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.TextType@4fa0c599
+2020-10-05 20:16:07.004 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.NTextType@1bc5214c
+2020-10-05 20:16:07.005 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BlobType@4d20cfd3
+2020-10-05 20:16:07.005 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@4d20cfd3
+2020-10-05 20:16:07.006 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@6a282716
+2020-10-05 20:16:07.007 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.ClobType@5b128179
+2020-10-05 20:16:07.007 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@5b128179
+2020-10-05 20:16:07.008 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.NClobType@5f3bb63b
+2020-10-05 20:16:07.009 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@5f3bb63b
+2020-10-05 20:16:07.009 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@f05bf5e
+2020-10-05 20:16:07.009 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@fc842be
+2020-10-05 20:16:07.011 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.SerializableType@2ce989bf
+2020-10-05 20:16:07.014 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.ObjectType@624144b3
+2020-10-05 20:16:07.014 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@624144b3
+2020-10-05 20:16:07.015 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@5f5b003e
+2020-10-05 20:16:07.015 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@14706589
+2020-10-05 20:16:07.015 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@d15ec69
+2020-10-05 20:16:07.015 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@7bd2986
+2020-10-05 20:16:07.015 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@e093bf
+2020-10-05 20:16:07.015 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@172bf207
+2020-10-05 20:16:07.015 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@35ff222f
+2020-10-05 20:16:07.015 DEBUG 2217 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@5b60dc0f
+2020-10-05 20:16:07.077  INFO 2217 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-10-05 20:16:07.169 DEBUG 2217 --- [task-1] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@185b0596] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@2c6fa025]
+2020-10-05 20:16:07.310  INFO 2217 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@749c26bb, org.springframework.security.web.context.SecurityContextPersistenceFilter@35bd6ab6, org.springframework.security.web.header.HeaderWriterFilter@3cbe559f, org.springframework.security.web.authentication.logout.LogoutFilter@182af8cf, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@10a0a4eb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@bea2cf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@176067a0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@610e533f, org.springframework.security.web.session.SessionManagementFilter@2885d55c, org.springframework.security.web.access.ExceptionTranslationFilter@6dcad00a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@254af306]
+2020-10-05 20:16:07.323  INFO 2217 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfiguration$NotOAuthRequestMatcher@d2f0f1e, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72ee208f, org.springframework.security.web.context.SecurityContextPersistenceFilter@4ca06545, org.springframework.security.web.header.HeaderWriterFilter@2620a2f2, org.springframework.security.web.authentication.logout.LogoutFilter@24ccebb0, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@265c0900, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6923be18, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4a37b6fc, org.springframework.security.web.session.SessionManagementFilter@251081e2, org.springframework.security.web.access.ExceptionTranslationFilter@19478c2d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@288d2f1b]
+2020-10-05 20:16:07.339  INFO 2217 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5bf2d612, org.springframework.security.web.context.SecurityContextPersistenceFilter@744113c7, org.springframework.security.web.header.HeaderWriterFilter@2c413043, org.springframework.security.web.csrf.CsrfFilter@38f40a5d, org.springframework.security.web.authentication.logout.LogoutFilter@4c79e4dd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1cbf2212, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@8c85210, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@39965aae, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5830467e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b906752, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1e769b4b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5c5c403c, org.springframework.security.web.session.SessionManagementFilter@6cff4ae7, org.springframework.security.web.access.ExceptionTranslationFilter@279bce9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6cc9943]
+2020-10-05 20:16:07.460 DEBUG 2217 --- [task-1] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@185b0596] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@1354e5f0]
+2020-10-05 20:16:07.525 DEBUG 2217 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-10-05 20:16:07.567 DEBUG 2217 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2020-10-05 20:16:07.604 DEBUG 2217 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-10-05 20:16:07.626 DEBUG 2217 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-10-05 20:16:07.662  WARN 2217 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-10-05 20:16:07.768  INFO 2217 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-10-05 20:16:07.774 TRACE 2217 --- [task-1] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@1354e5f0] for TypeConfiguration
+2020-10-05 20:16:07.776  INFO 2217 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-10-05 20:16:07.793  INFO 2217 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-10-05 20:16:07.930 DEBUG 2217 --- [restartedMain] o.h.stat.internal.StatisticsInitiator    : Statistics initialized [enabled=true]
+2020-10-05 20:16:08.179  INFO 2217 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-10-05 20:16:08.324  INFO 2217 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/mobileAPI'
+2020-10-05 20:16:08.326  INFO 2217 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-10-05 20:16:08.467  INFO 2217 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
     0 nanoseconds spent acquiring 0 JDBC connections;
     0 nanoseconds spent releasing 0 JDBC connections;
     0 nanoseconds spent preparing 0 JDBC statements;
@@ -366,7 +193,7 @@ Caused by: java.sql.SQLNonTransientConnectionException: Public Key Retrieval is 
     0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
     0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
 }
-2020-10-04 21:19:14.708  INFO 1653 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
+2020-10-05 20:16:08.469  INFO 2217 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
     0 nanoseconds spent acquiring 0 JDBC connections;
     0 nanoseconds spent releasing 0 JDBC connections;
     0 nanoseconds spent preparing 0 JDBC statements;
@@ -378,7 +205,7 @@ Caused by: java.sql.SQLNonTransientConnectionException: Public Key Retrieval is 
     0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
     0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
 }
-2020-10-04 21:19:14.821  INFO 1653 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
+2020-10-05 20:16:08.543  INFO 2217 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
     0 nanoseconds spent acquiring 0 JDBC connections;
     0 nanoseconds spent releasing 0 JDBC connections;
     0 nanoseconds spent preparing 0 JDBC statements;
@@ -390,7 +217,7 @@ Caused by: java.sql.SQLNonTransientConnectionException: Public Key Retrieval is 
     0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
     0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
 }
-2020-10-04 21:19:14.899  INFO 1653 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
+2020-10-05 20:16:08.610  INFO 2217 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
     0 nanoseconds spent acquiring 0 JDBC connections;
     0 nanoseconds spent releasing 0 JDBC connections;
     0 nanoseconds spent preparing 0 JDBC statements;
@@ -402,7 +229,7 @@ Caused by: java.sql.SQLNonTransientConnectionException: Public Key Retrieval is 
     0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
     0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
 }
-2020-10-04 21:19:14.901  INFO 1653 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
+2020-10-05 20:16:08.611  INFO 2217 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
     0 nanoseconds spent acquiring 0 JDBC connections;
     0 nanoseconds spent releasing 0 JDBC connections;
     0 nanoseconds spent preparing 0 JDBC statements;
@@ -414,7 +241,7 @@ Caused by: java.sql.SQLNonTransientConnectionException: Public Key Retrieval is 
     0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
     0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
 }
-2020-10-04 21:19:14.960  INFO 1653 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
+2020-10-05 20:16:08.679  INFO 2217 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
     0 nanoseconds spent acquiring 0 JDBC connections;
     0 nanoseconds spent releasing 0 JDBC connections;
     0 nanoseconds spent preparing 0 JDBC statements;
@@ -426,7 +253,7 @@ Caused by: java.sql.SQLNonTransientConnectionException: Public Key Retrieval is 
     0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
     0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
 }
-2020-10-04 21:19:14.987  INFO 1653 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
+2020-10-05 20:16:08.733  INFO 2217 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
     0 nanoseconds spent acquiring 0 JDBC connections;
     0 nanoseconds spent releasing 0 JDBC connections;
     0 nanoseconds spent preparing 0 JDBC statements;
@@ -438,7 +265,7 @@ Caused by: java.sql.SQLNonTransientConnectionException: Public Key Retrieval is 
     0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
     0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
 }
-2020-10-04 21:19:15.000  INFO 1653 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
+2020-10-05 20:16:08.752  INFO 2217 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
     0 nanoseconds spent acquiring 0 JDBC connections;
     0 nanoseconds spent releasing 0 JDBC connections;
     0 nanoseconds spent preparing 0 JDBC statements;
@@ -450,7 +277,7 @@ Caused by: java.sql.SQLNonTransientConnectionException: Public Key Retrieval is 
     0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
     0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
 }
-2020-10-04 21:19:15.001  INFO 1653 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
+2020-10-05 20:16:08.753  INFO 2217 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
     0 nanoseconds spent acquiring 0 JDBC connections;
     0 nanoseconds spent releasing 0 JDBC connections;
     0 nanoseconds spent preparing 0 JDBC statements;
@@ -462,7 +289,7 @@ Caused by: java.sql.SQLNonTransientConnectionException: Public Key Retrieval is 
     0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
     0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
 }
-2020-10-04 21:19:15.007  INFO 1653 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
+2020-10-05 20:16:08.769  INFO 2217 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
     0 nanoseconds spent acquiring 0 JDBC connections;
     0 nanoseconds spent releasing 0 JDBC connections;
     0 nanoseconds spent preparing 0 JDBC statements;
@@ -474,7 +301,7 @@ Caused by: java.sql.SQLNonTransientConnectionException: Public Key Retrieval is 
     0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
     0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
 }
-2020-10-04 21:19:15.008  INFO 1653 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
+2020-10-05 20:16:08.773  INFO 2217 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
     0 nanoseconds spent acquiring 0 JDBC connections;
     0 nanoseconds spent releasing 0 JDBC connections;
     0 nanoseconds spent preparing 0 JDBC statements;
@@ -486,7 +313,7 @@ Caused by: java.sql.SQLNonTransientConnectionException: Public Key Retrieval is 
     0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
     0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
 }
-2020-10-04 21:19:15.020  INFO 1653 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
+2020-10-05 20:16:08.788  INFO 2217 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
     0 nanoseconds spent acquiring 0 JDBC connections;
     0 nanoseconds spent releasing 0 JDBC connections;
     0 nanoseconds spent preparing 0 JDBC statements;
@@ -498,7 +325,7 @@ Caused by: java.sql.SQLNonTransientConnectionException: Public Key Retrieval is 
     0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
     0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
 }
-2020-10-04 21:19:15.023  INFO 1653 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
+2020-10-05 20:16:08.791  INFO 2217 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
     0 nanoseconds spent acquiring 0 JDBC connections;
     0 nanoseconds spent releasing 0 JDBC connections;
     0 nanoseconds spent preparing 0 JDBC statements;
@@ -510,345 +337,16 @@ Caused by: java.sql.SQLNonTransientConnectionException: Public Key Retrieval is 
     0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
     0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
 }
-2020-10-04 21:19:15.027  INFO 1653 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
-2020-10-04 21:19:15.056  INFO 1653 --- [restartedMain] com.mobileapi.api.ApiApplicationKt       : Started ApiApplicationKt in 6.168 seconds (JVM running for 7.53)
-2020-10-04 21:19:15.458  INFO 1653 --- [RMI TCP Connection(1)-192.168.43.4] o.a.c.c.C.[.[localhost].[/mobileAPI]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-10-04 21:19:15.458  INFO 1653 --- [RMI TCP Connection(1)-192.168.43.4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-10-04 21:19:15.458 DEBUG 1653 --- [RMI TCP Connection(1)-192.168.43.4] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2020-10-04 21:19:15.467 DEBUG 1653 --- [RMI TCP Connection(1)-192.168.43.4] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='true': request parameters and headers will be shown which may lead to unsafe logging of potentially sensitive data
-2020-10-04 21:19:15.467  INFO 1653 --- [RMI TCP Connection(1)-192.168.43.4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
-2020-10-04 21:20:16.224  INFO 1653 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-10-04 21:20:16.225 TRACE 1653 --- [SpringContextShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@10365a6e] for TypeConfiguration
-2020-10-04 21:20:16.226 DEBUG 1653 --- [SpringContextShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@483532ff] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@10365a6e]
-2020-10-04 21:20:16.229  INFO 1653 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-04 21:20:16.230  INFO 1653 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2020-10-04 21:20:16.240  INFO 1653 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2020-10-04 21:20:20.488  INFO 1666 --- [restartedMain] com.mobileapi.api.ApiApplicationKt       : Starting ApiApplicationKt on mac-umarauna.local with PID 1666 (/Users/umarsaiduauna/Documents/IntelliJ/Java/SpringBoot/mobile-api/target/classes started by umarsaiduauna in /Users/umarsaiduauna/Documents/IntelliJ/Java/SpringBoot/mobile-api)
-2020-10-04 21:20:20.492  INFO 1666 --- [restartedMain] com.mobileapi.api.ApiApplicationKt       : No active profile set, falling back to default profiles: default
-2020-10-04 21:20:20.557  INFO 1666 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-core-2.3.0.1.jar referenced one or more files that do not exist: file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0.1/jaxb-api.jar
-2020-10-04 21:20:20.557  INFO 1666 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-impl-2.3.1.jar referenced one or more files that do not exist: file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/jaxb-runtime-2.3.1.jar,file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/txw2-2.3.1.jar,file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/istack-commons-runtime-3.0.7.jar,file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/stax-ex-1.8.jar,file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/FastInfoset-1.2.15.jar,file:/Users/umarsaiduauna/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.1/javax.activation-api-1.2.0.jar
-2020-10-04 21:20:20.557  INFO 1666 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-10-04 21:20:22.292  INFO 1666 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-10-04 21:20:22.293  INFO 1666 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2020-10-04 21:20:22.338  INFO 1666 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mobileapi.api.dao.RoleDao. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2020-10-04 21:20:22.343  INFO 1666 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mobileapi.api.dao.UserDao. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2020-10-04 21:20:22.345  INFO 1666 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.mobileapi.api.dao.UserInfoDao. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
-2020-10-04 21:20:22.345  INFO 1666 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46ms. Found 0 JDBC repository interfaces.
-2020-10-04 21:20:22.360  INFO 1666 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-10-04 21:20:22.361  INFO 1666 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
-2020-10-04 21:20:22.397  INFO 1666 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29ms. Found 3 JPA repository interfaces.
-2020-10-04 21:20:23.128  INFO 1666 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-10-04 21:20:23.141  INFO 1666 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-10-04 21:20:23.142  INFO 1666 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.38]
-2020-10-04 21:20:23.236  INFO 1666 --- [restartedMain] o.a.c.c.C.[.[localhost].[/mobileAPI]     : Initializing Spring embedded WebApplicationContext
-2020-10-04 21:20:23.237  INFO 1666 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2680 ms
-2020-10-04 21:20:23.455 DEBUG 1666 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: filterRegistrationBean urls=[/*] order=-2147483647, springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
-2020-10-04 21:20:23.455 DEBUG 1666 --- [restartedMain] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: dispatcherServlet urls=[/]
-2020-10-04 21:20:23.509  INFO 1666 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-10-04 21:20:23.698  INFO 1666 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-10-04 21:20:23.828  INFO 1666 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-10-04 21:20:23.884  INFO 1666 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-10-04 21:20:23.950  WARN 1666 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-10-04 21:20:23.960  INFO 1666 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.21.Final
-2020-10-04 21:20:24.148  INFO 1666 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-10-04 21:20:24.205 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@35b60f5c
-2020-10-04 21:20:24.206 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BooleanType@35b60f5c
-2020-10-04 21:20:24.207 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@35b60f5c
-2020-10-04 21:20:24.209 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@70ae52cb
-2020-10-04 21:20:24.210 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.TrueFalseType@42d3fbdb
-2020-10-04 21:20:24.211 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.YesNoType@4e830e8
-2020-10-04 21:20:24.213 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@1fb4a21f
-2020-10-04 21:20:24.213 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.ByteType@1fb4a21f
-2020-10-04 21:20:24.213 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@1fb4a21f
-2020-10-04 21:20:24.214 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.CharacterType@3075c81a
-2020-10-04 21:20:24.215 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.CharacterType@3075c81a
-2020-10-04 21:20:24.215 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@3075c81a
-2020-10-04 21:20:24.216 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@490ae8b1
-2020-10-04 21:20:24.216 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.ShortType@490ae8b1
-2020-10-04 21:20:24.216 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.ShortType@490ae8b1
-2020-10-04 21:20:24.217 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.IntegerType@751f0386
-2020-10-04 21:20:24.218 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.IntegerType@751f0386
-2020-10-04 21:20:24.218 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@751f0386
-2020-10-04 21:20:24.219 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@15fcdec1
-2020-10-04 21:20:24.219 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.LongType@15fcdec1
-2020-10-04 21:20:24.219 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.LongType@15fcdec1
-2020-10-04 21:20:24.220 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@39bd6d8b
-2020-10-04 21:20:24.221 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.FloatType@39bd6d8b
-2020-10-04 21:20:24.221 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.FloatType@39bd6d8b
-2020-10-04 21:20:24.223 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@11d163ce
-2020-10-04 21:20:24.223 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.DoubleType@11d163ce
-2020-10-04 21:20:24.223 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@11d163ce
-2020-10-04 21:20:24.225 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@53c08ce
-2020-10-04 21:20:24.225 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@53c08ce
-2020-10-04 21:20:24.227 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BigIntegerType@3add0ae2
-2020-10-04 21:20:24.227 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@3add0ae2
-2020-10-04 21:20:24.230 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.StringType@64b2f2a1
-2020-10-04 21:20:24.231 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.StringType@64b2f2a1
-2020-10-04 21:20:24.232 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.StringNVarcharType@b462d13
-2020-10-04 21:20:24.233 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@4161e5c2
-2020-10-04 21:20:24.234 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.UrlType@6ef802e8
-2020-10-04 21:20:24.234 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.UrlType@6ef802e8
-2020-10-04 21:20:24.235 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.DurationType@2067eb20
-2020-10-04 21:20:24.235 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.DurationType@2067eb20
-2020-10-04 21:20:24.237 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration Instant -> org.hibernate.type.InstantType@7d92c562
-2020-10-04 21:20:24.237 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.InstantType@7d92c562
-2020-10-04 21:20:24.238 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@742fb46
-2020-10-04 21:20:24.239 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@742fb46
-2020-10-04 21:20:24.240 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.LocalDateType@36640e7
-2020-10-04 21:20:24.241 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@36640e7
-2020-10-04 21:20:24.242 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@42609df7
-2020-10-04 21:20:24.242 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@42609df7
-2020-10-04 21:20:24.244 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@2481e632
-2020-10-04 21:20:24.245 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@2481e632
-2020-10-04 21:20:24.246 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@52d6968f
-2020-10-04 21:20:24.247 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@52d6968f
-2020-10-04 21:20:24.249 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@96b8e5
-2020-10-04 21:20:24.250 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@96b8e5
-2020-10-04 21:20:24.252 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.DateType@56900882
-2020-10-04 21:20:24.252 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.DateType@56900882
-2020-10-04 21:20:24.253 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.TimeType@7a63ec4d
-2020-10-04 21:20:24.253 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.TimeType@7a63ec4d
-2020-10-04 21:20:24.254 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.TimestampType@7818e1a4
-2020-10-04 21:20:24.254 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@7818e1a4
-2020-10-04 21:20:24.255 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.TimestampType@7818e1a4
-2020-10-04 21:20:24.256 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@1e745ba5
-2020-10-04 21:20:24.258 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.CalendarType@4c5a00e7
-2020-10-04 21:20:24.258 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@4c5a00e7
-2020-10-04 21:20:24.259 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@4c5a00e7
-2020-10-04 21:20:24.260 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@15dda3a7
-2020-10-04 21:20:24.260 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@150f7719
-2020-10-04 21:20:24.261 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.LocaleType@1a892e3c
-2020-10-04 21:20:24.262 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@1a892e3c
-2020-10-04 21:20:24.262 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.CurrencyType@6be2ce4f
-2020-10-04 21:20:24.263 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@6be2ce4f
-2020-10-04 21:20:24.264 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.TimeZoneType@6f8c1c19
-2020-10-04 21:20:24.264 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@6f8c1c19
-2020-10-04 21:20:24.265 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.ClassType@241034b6
-2020-10-04 21:20:24.265 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.ClassType@241034b6
-2020-10-04 21:20:24.266 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@552dfece
-2020-10-04 21:20:24.266 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@552dfece
-2020-10-04 21:20:24.267 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@59df50f2
-2020-10-04 21:20:24.268 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BinaryType@65d9638
-2020-10-04 21:20:24.268 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BinaryType@65d9638
-2020-10-04 21:20:24.269 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BinaryType@65d9638
-2020-10-04 21:20:24.269 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@f23cc49
-2020-10-04 21:20:24.269 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@f23cc49
-2020-10-04 21:20:24.270 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@f23cc49
-2020-10-04 21:20:24.270 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.RowVersionType@5352415d
-2020-10-04 21:20:24.271 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.ImageType@1683d671
-2020-10-04 21:20:24.272 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.CharArrayType@72594dd5
-2020-10-04 21:20:24.272 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.CharArrayType@72594dd5
-2020-10-04 21:20:24.272 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.CharArrayType@72594dd5
-2020-10-04 21:20:24.273 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@792eb8d
-2020-10-04 21:20:24.274 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@792eb8d
-2020-10-04 21:20:24.274 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@792eb8d
-2020-10-04 21:20:24.274 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.TextType@2ea34a17
-2020-10-04 21:20:24.275 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.NTextType@26d5a0b0
-2020-10-04 21:20:24.277 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BlobType@43e6e3b1
-2020-10-04 21:20:24.277 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@43e6e3b1
-2020-10-04 21:20:24.278 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@50164ce9
-2020-10-04 21:20:24.280 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.ClobType@15f5614d
-2020-10-04 21:20:24.280 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@15f5614d
-2020-10-04 21:20:24.282 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.NClobType@5bed5482
-2020-10-04 21:20:24.283 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@5bed5482
-2020-10-04 21:20:24.283 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@5e26d779
-2020-10-04 21:20:24.284 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@2c352b79
-2020-10-04 21:20:24.286 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.SerializableType@4d1608f7
-2020-10-04 21:20:24.289 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.ObjectType@2d0e0149
-2020-10-04 21:20:24.289 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@2d0e0149
-2020-10-04 21:20:24.290 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@4a2ab183
-2020-10-04 21:20:24.290 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@30052b15
-2020-10-04 21:20:24.290 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@2354c33a
-2020-10-04 21:20:24.291 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@2bdcd13b
-2020-10-04 21:20:24.291 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@34e5cb6a
-2020-10-04 21:20:24.291 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@2d211360
-2020-10-04 21:20:24.291 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@28e958ed
-2020-10-04 21:20:24.291 DEBUG 1666 --- [task-1] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@65f101c2
-2020-10-04 21:20:24.349  INFO 1666 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-2020-10-04 21:20:24.430 DEBUG 1666 --- [task-1] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@47ce7c2a] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@26a760d]
-2020-10-04 21:20:24.614  INFO 1666 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@159cee6a, org.springframework.security.web.context.SecurityContextPersistenceFilter@4680dd4b, org.springframework.security.web.header.HeaderWriterFilter@2d33a845, org.springframework.security.web.authentication.logout.LogoutFilter@631f0fc, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@456e939b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4585f4a9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@424ea4f5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24df4509, org.springframework.security.web.session.SessionManagementFilter@596ed275, org.springframework.security.web.access.ExceptionTranslationFilter@6c494772, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6eefbe18]
-2020-10-04 21:20:24.634  INFO 1666 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfiguration$NotOAuthRequestMatcher@7f7bc527, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1d03c6ba, org.springframework.security.web.context.SecurityContextPersistenceFilter@6604a0bf, org.springframework.security.web.header.HeaderWriterFilter@5a4f5aa5, org.springframework.security.web.authentication.logout.LogoutFilter@32f34ded, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@58537a18, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@629c549f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@42a6a01b, org.springframework.security.web.session.SessionManagementFilter@2ed3bee5, org.springframework.security.web.access.ExceptionTranslationFilter@623cc404, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1b4248bd]
-2020-10-04 21:20:24.652  INFO 1666 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@294423c5, org.springframework.security.web.context.SecurityContextPersistenceFilter@30a16c0d, org.springframework.security.web.header.HeaderWriterFilter@4be8f409, org.springframework.security.web.csrf.CsrfFilter@67b52dd5, org.springframework.security.web.authentication.logout.LogoutFilter@14cc755f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@333e705f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@a9c424f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@2513347d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5d53b770, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@595f9a1c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@559b7582, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@65ef0408, org.springframework.security.web.session.SessionManagementFilter@7e343d9b, org.springframework.security.web.access.ExceptionTranslationFilter@2ea8f7e2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@519149]
-2020-10-04 21:20:24.754 DEBUG 1666 --- [task-1] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@47ce7c2a] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@6c868b02]
-2020-10-04 21:20:24.849 DEBUG 1666 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2020-10-04 21:20:24.916 DEBUG 1666 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
-2020-10-04 21:20:24.953 DEBUG 1666 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2020-10-04 21:20:24.970 DEBUG 1666 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2020-10-04 21:20:25.006  WARN 1666 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2020-10-04 21:20:25.059  INFO 1666 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-10-04 21:20:25.070 TRACE 1666 --- [task-1] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@6c868b02] for TypeConfiguration
-2020-10-04 21:20:25.072  INFO 1666 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-10-04 21:20:25.131  INFO 1666 --- [task-2] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-10-04 21:20:25.290 DEBUG 1666 --- [restartedMain] o.h.stat.internal.StatisticsInitiator    : Statistics initialized [enabled=true]
-2020-10-04 21:20:25.481  INFO 1666 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
-2020-10-04 21:20:25.564  INFO 1666 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/mobileAPI'
-2020-10-04 21:20:25.566  INFO 1666 --- [restartedMain] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
-2020-10-04 21:20:25.667  INFO 1666 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
-    0 nanoseconds spent acquiring 0 JDBC connections;
-    0 nanoseconds spent releasing 0 JDBC connections;
-    0 nanoseconds spent preparing 0 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC batches;
-    0 nanoseconds spent performing 0 L2C puts;
-    0 nanoseconds spent performing 0 L2C hits;
-    0 nanoseconds spent performing 0 L2C misses;
-    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
-    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
-}
-2020-10-04 21:20:25.668  INFO 1666 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
-    0 nanoseconds spent acquiring 0 JDBC connections;
-    0 nanoseconds spent releasing 0 JDBC connections;
-    0 nanoseconds spent preparing 0 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC batches;
-    0 nanoseconds spent performing 0 L2C puts;
-    0 nanoseconds spent performing 0 L2C hits;
-    0 nanoseconds spent performing 0 L2C misses;
-    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
-    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
-}
-2020-10-04 21:20:25.751  INFO 1666 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
-    0 nanoseconds spent acquiring 0 JDBC connections;
-    0 nanoseconds spent releasing 0 JDBC connections;
-    0 nanoseconds spent preparing 0 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC batches;
-    0 nanoseconds spent performing 0 L2C puts;
-    0 nanoseconds spent performing 0 L2C hits;
-    0 nanoseconds spent performing 0 L2C misses;
-    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
-    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
-}
-2020-10-04 21:20:25.840  INFO 1666 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
-    0 nanoseconds spent acquiring 0 JDBC connections;
-    0 nanoseconds spent releasing 0 JDBC connections;
-    0 nanoseconds spent preparing 0 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC batches;
-    0 nanoseconds spent performing 0 L2C puts;
-    0 nanoseconds spent performing 0 L2C hits;
-    0 nanoseconds spent performing 0 L2C misses;
-    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
-    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
-}
-2020-10-04 21:20:25.845  INFO 1666 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
-    0 nanoseconds spent acquiring 0 JDBC connections;
-    0 nanoseconds spent releasing 0 JDBC connections;
-    0 nanoseconds spent preparing 0 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC batches;
-    0 nanoseconds spent performing 0 L2C puts;
-    0 nanoseconds spent performing 0 L2C hits;
-    0 nanoseconds spent performing 0 L2C misses;
-    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
-    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
-}
-2020-10-04 21:20:25.924  INFO 1666 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
-    0 nanoseconds spent acquiring 0 JDBC connections;
-    0 nanoseconds spent releasing 0 JDBC connections;
-    0 nanoseconds spent preparing 0 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC batches;
-    0 nanoseconds spent performing 0 L2C puts;
-    0 nanoseconds spent performing 0 L2C hits;
-    0 nanoseconds spent performing 0 L2C misses;
-    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
-    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
-}
-2020-10-04 21:20:25.933  INFO 1666 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
-    0 nanoseconds spent acquiring 0 JDBC connections;
-    0 nanoseconds spent releasing 0 JDBC connections;
-    0 nanoseconds spent preparing 0 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC batches;
-    0 nanoseconds spent performing 0 L2C puts;
-    0 nanoseconds spent performing 0 L2C hits;
-    0 nanoseconds spent performing 0 L2C misses;
-    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
-    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
-}
-2020-10-04 21:20:25.943  INFO 1666 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
-    0 nanoseconds spent acquiring 0 JDBC connections;
-    0 nanoseconds spent releasing 0 JDBC connections;
-    0 nanoseconds spent preparing 0 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC batches;
-    0 nanoseconds spent performing 0 L2C puts;
-    0 nanoseconds spent performing 0 L2C hits;
-    0 nanoseconds spent performing 0 L2C misses;
-    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
-    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
-}
-2020-10-04 21:20:25.943  INFO 1666 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
-    0 nanoseconds spent acquiring 0 JDBC connections;
-    0 nanoseconds spent releasing 0 JDBC connections;
-    0 nanoseconds spent preparing 0 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC batches;
-    0 nanoseconds spent performing 0 L2C puts;
-    0 nanoseconds spent performing 0 L2C hits;
-    0 nanoseconds spent performing 0 L2C misses;
-    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
-    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
-}
-2020-10-04 21:20:25.949  INFO 1666 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
-    0 nanoseconds spent acquiring 0 JDBC connections;
-    0 nanoseconds spent releasing 0 JDBC connections;
-    0 nanoseconds spent preparing 0 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC batches;
-    0 nanoseconds spent performing 0 L2C puts;
-    0 nanoseconds spent performing 0 L2C hits;
-    0 nanoseconds spent performing 0 L2C misses;
-    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
-    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
-}
-2020-10-04 21:20:25.951  INFO 1666 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
-    0 nanoseconds spent acquiring 0 JDBC connections;
-    0 nanoseconds spent releasing 0 JDBC connections;
-    0 nanoseconds spent preparing 0 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC batches;
-    0 nanoseconds spent performing 0 L2C puts;
-    0 nanoseconds spent performing 0 L2C hits;
-    0 nanoseconds spent performing 0 L2C misses;
-    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
-    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
-}
-2020-10-04 21:20:25.958  INFO 1666 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
-    0 nanoseconds spent acquiring 0 JDBC connections;
-    0 nanoseconds spent releasing 0 JDBC connections;
-    0 nanoseconds spent preparing 0 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC batches;
-    0 nanoseconds spent performing 0 L2C puts;
-    0 nanoseconds spent performing 0 L2C hits;
-    0 nanoseconds spent performing 0 L2C misses;
-    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
-    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
-}
-2020-10-04 21:20:25.959  INFO 1666 --- [restartedMain] i.StatisticalLoggingSessionEventListener : Session Metrics {
-    0 nanoseconds spent acquiring 0 JDBC connections;
-    0 nanoseconds spent releasing 0 JDBC connections;
-    0 nanoseconds spent preparing 0 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC statements;
-    0 nanoseconds spent executing 0 JDBC batches;
-    0 nanoseconds spent performing 0 L2C puts;
-    0 nanoseconds spent performing 0 L2C hits;
-    0 nanoseconds spent performing 0 L2C misses;
-    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
-    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
-}
-2020-10-04 21:20:25.961  INFO 1666 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
-2020-10-04 21:20:25.980  INFO 1666 --- [restartedMain] com.mobileapi.api.ApiApplicationKt       : Started ApiApplicationKt in 6.005 seconds (JVM running for 7.137)
-2020-10-04 21:20:26.338  INFO 1666 --- [RMI TCP Connection(3)-192.168.43.4] o.a.c.c.C.[.[localhost].[/mobileAPI]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-10-04 21:20:26.338  INFO 1666 --- [RMI TCP Connection(3)-192.168.43.4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-10-04 21:20:26.339 DEBUG 1666 --- [RMI TCP Connection(3)-192.168.43.4] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2020-10-04 21:20:26.348 DEBUG 1666 --- [RMI TCP Connection(3)-192.168.43.4] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='true': request parameters and headers will be shown which may lead to unsafe logging of potentially sensitive data
-2020-10-04 21:20:26.348  INFO 1666 --- [RMI TCP Connection(3)-192.168.43.4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
-2020-10-04 21:20:38.487  INFO 1666 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-10-04 21:20:38.488 TRACE 1666 --- [SpringContextShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@6c868b02] for TypeConfiguration
-2020-10-04 21:20:38.488 DEBUG 1666 --- [SpringContextShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@2ab26c08] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@6c868b02]
-2020-10-04 21:20:38.492  INFO 1666 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-10-04 21:20:38.493  INFO 1666 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2020-10-04 21:20:38.503  INFO 1666 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-10-05 20:16:08.796  INFO 2217 --- [restartedMain] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-10-05 20:16:08.818  INFO 2217 --- [restartedMain] com.mobileapi.api.ApiApplicationKt       : Started ApiApplicationKt in 6.023 seconds (JVM running for 7.192)
+2020-10-05 20:16:09.087  INFO 2217 --- [RMI TCP Connection(2)-192.168.43.4] o.a.c.c.C.[.[localhost].[/mobileAPI]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-05 20:16:09.087  INFO 2217 --- [RMI TCP Connection(2)-192.168.43.4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-05 20:16:09.087 DEBUG 2217 --- [RMI TCP Connection(2)-192.168.43.4] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2020-10-05 20:16:09.108 DEBUG 2217 --- [RMI TCP Connection(2)-192.168.43.4] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='true': request parameters and headers will be shown which may lead to unsafe logging of potentially sensitive data
+2020-10-05 20:16:09.108  INFO 2217 --- [RMI TCP Connection(2)-192.168.43.4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 21 ms
+2020-10-05 20:18:31.439  INFO 2217 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-05 20:18:31.445 TRACE 2217 --- [SpringContextShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@1354e5f0] for TypeConfiguration
+2020-10-05 20:18:31.446 DEBUG 2217 --- [SpringContextShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@5d7f7f59] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@1354e5f0]
+2020-10-05 20:18:31.453  INFO 2217 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-05 20:18:31.454  INFO 2217 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-10-05 20:18:31.479  INFO 2217 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
