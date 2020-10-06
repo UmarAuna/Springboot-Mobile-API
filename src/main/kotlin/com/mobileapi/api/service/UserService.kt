@@ -1,5 +1,6 @@
 package com.mobileapi.api.service
 
+
 import com.mobileapi.api.dao.RoleDao
 import com.mobileapi.api.dao.UserDao
 import com.mobileapi.api.dao.UserInfoDao
@@ -12,13 +13,14 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException
 import org.springframework.security.crypto.password.PasswordEncoder
 import org.springframework.stereotype.Service
 
-
 /*
 * These class files are used to write business
 * logic in a different layer, separated from @RestController class file.
 * */
+
 @Service("userDetailsService")
 class UserService : UserDetailsService {
+
     @Autowired
     private lateinit var userDao: UserDao
 
@@ -31,10 +33,10 @@ class UserService : UserDetailsService {
     @Autowired
     private lateinit var passwordEncoder: PasswordEncoder
 
-    @Throws(UsernameNotFoundException::class)
+
     override fun loadUserByUsername(username: String): UserDetails =
-            userDao.findOneByUsername(username) ?:
-                    throw UsernameNotFoundException("user not found")
+            userDao.findOneByUsername(username)
+                    ?: throw UsernameNotFoundException("user not found")
 
     fun createUser(email: String, password: String): User? =
             if (userDao.findOneByUsername(email) == null) {
@@ -63,7 +65,7 @@ class UserService : UserDetailsService {
         }
     }
 
-    fun getUserInfo(email:String): UserInfo? =
+    fun getUserInfo(email: String): UserInfo? =
             userDao.findOneByUsername(email)?.let {
                 userInfoDao.findOneByUserId(it.id)
             }
